@@ -2,7 +2,7 @@
 
 def square_matrix_simple(matrix=[]):
     newmatrix = []
-    for row in matrix:
-        res = (list(filter((lambda x: x**2, row))))
+    for col in matrix:
+        res = (list(filter((lambda x: x**2, col))))
         newmatrix.append(res)
     return newmatrix
