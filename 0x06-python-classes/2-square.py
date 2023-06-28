@@ -1,5 +1,8 @@
 #!/usr/bin/python3
+
 """ creating a class"""
+
+
 class Square:
     """ representing a new square"""
     def __init__(self, size=0):
