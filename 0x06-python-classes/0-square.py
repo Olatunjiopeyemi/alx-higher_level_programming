@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-
+""" Defining a class named square"""
 class Square:
-    pass  #an empty block
+    """ an empty square block"""
+    pass
 
