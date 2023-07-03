@@ -3,12 +3,16 @@
 """Defining a rectangle based on 0-rectangle.py"""
 
 
-
 class Rectangle:
     """class defined"""
 
     def __init__(self, width=0, height=0):
-        """initializing"""
+         """Initialize a new Rectangle.
+
+        Args:
+            width (int): The width of the new rectangle.
+            height (int): The height of the new rectangle.
+        """
         self.height = height
         self.width = width
 
@@ -25,7 +29,7 @@ class Rectangle:
             raise typeError("height must be an integer")
         elif value < 0:
             raise ValueError("height must be >= 0")
-
+        self.__height = value
 
     @property
     def width(self):
