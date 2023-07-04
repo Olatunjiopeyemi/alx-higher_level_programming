@@ -27,7 +27,7 @@ class Rectangle:
     @property
     def width(self):
         """Get/set the width of the Rectangle."""
-        return (self.__width)
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -40,7 +40,7 @@ class Rectangle:
     @property
     def height(self):
         """Get/set the height of the Rectangle."""
-        return (self.__height)
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -52,11 +52,11 @@ class Rectangle:
 
     def area(self):
         """Return the area of the Rectangle."""
-        return (self.__width) * (self.__height)
+        return (self.__width * self.__height)
 
     def perimeter(self):
         """Return the perimeter of the Rectangle."""
-        if (self.__width) == 0 or (self.__height) == 0:
+        if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
 
@@ -65,21 +65,21 @@ class Rectangle:
 
         Represents the rectangle with the # character.
         """
-        if (self.__width) == 0 or (self.__height) == 0:
+        if self.__width == 0 or self.__height == 0:
             return ("")
 
-        string = []
-        for n in range(self.__height):
-            [string.append(str(self.print_symbol)) for j in range(self.__width)]
-            if n != self.__height - 1:
-                string.append("\n")
-        return ("".join(string))
+        rect = []
+        for i in range(self.__height):
+            [rect.append(str(self.print_symbol)) for j in range(self.__width)]
+            if i != self.__height - 1:
+                rect.append("\n")
+        return ("".join(rect))
 
     def __repr__(self):
         """Return the string representation of the Rectangle."""
-        string = "Rectangle(" + str(self.__width)
-        string += ", " + str(self.__height) + ")"
-        return (string)
+        rect = "Rectangle(" + str(self.__width)
+        rect += ", " + str(self.__height) + ")"
+        return (rect)
 
     def __del__(self):
         """Print a message for every deletion of a Rectangle."""
