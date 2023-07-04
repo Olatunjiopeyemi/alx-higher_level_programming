@@ -3,14 +3,13 @@
 
 
 class Rectangle:
-    """Represent a rectangle
+    """Represent a rectangle.
 
     Attributes:
         number_of_instances (int): The number of Rectangle instances.
     """
 
     number_of_instances = 0
-
 
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
@@ -55,7 +54,7 @@ class Rectangle:
 
     def perimeter(self):
         """Return the perimeter of the Rectangle."""
-        if self.__width == 0 or self.__height == 0:
+        if (self.__width) == 0 or (self.__height) == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
 
@@ -64,7 +63,7 @@ class Rectangle:
 
         Represents the rectangle with the # character.
         """
-        if self.__width == 0 or self.__height == 0:
+        if (self.__width) == 0 or (self.__height) == 0:
             return ("")
 
         string = []
