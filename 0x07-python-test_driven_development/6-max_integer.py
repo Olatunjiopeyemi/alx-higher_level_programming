@@ -9,10 +9,10 @@ def max_integer(list=[]):
     """
     if len(list) == 0:
         return None
-    maxi = list[0]
-    n = 1
-    while n < len(list):
-        if list[n] > maxi:
-            maxi = list[n]
-        n += 1
-    return maxi
+    result = list[0]
+    i = 1
+    while i < len(list):
+        if list[i] > result:
+            result = list[i]
+        i += 1
+    return result
