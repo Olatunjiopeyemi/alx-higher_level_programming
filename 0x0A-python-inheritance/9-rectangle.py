@@ -7,12 +7,6 @@ class Rectangle(BaseGeometry):
     """Defines a Rectangle class."""
 
     def __init__(self, width: int, height: int):
-         """Intialize a new Rectangle.
-
-        Args:
-            width (int): The width of the new Rectangle.
-            height (int): The height of the new Rectangle.
-        """
         super().integer_validator("width", width)
         super().integer_validator("height", height)
         self.__width = width
