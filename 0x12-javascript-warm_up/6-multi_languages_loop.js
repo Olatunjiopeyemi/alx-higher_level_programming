@@ -1,5 +1,5 @@
 #!/usr/bin/node
-let Arr = ["C is fun", "Python is cool", "JavaScript is amazing"];
+const Arr = ["C is fun", "Python is cool", "JavaScript is amazing"];
 let i = 0;
 while (i < Arr.length) {
   console.log(Arr[i]);
