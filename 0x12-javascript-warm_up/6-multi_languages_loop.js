@@ -1,7 +1,7 @@
 #!/usr/bin/node
-let Var = ["C is fun", "Python is cool", "JavaScript is amazing"];
+let Arr = ["C is fun", "Python is cool", "JavaScript is amazing"];
 let i = 0;
-while (i < 3) {
-  console.log(Var[i]);
+while (i < Arr.length) {
+  console.log(Arr[i]);
   i++;
 }
